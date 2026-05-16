@@ -1,0 +1,174 @@
+[21:28:29] SERVER: 🔔 Ly joined the chat
+[21:28:40] SERVER: 🔔 Bo joined the chat
+[21:28:40] SERVER: 🔔 Bo joined the chat
+[21:28:49] Ly: Hi
+[21:28:56] Bo: Hello
+[21:37:24] SERVER: 🔔 Lu joined the chat
+[21:38:59] SERVER: 🔔 Ly joined the chat
+[21:39:12] SERVER: 🔔 My joined the chat
+[21:39:12] SERVER: 🔔 My joined the chat
+[21:39:19] My: Hi
+[21:39:19] My: Hi
+[21:39:23] Ly: Hello
+[21:39:23] Ly: Hello
+[21:41:43] Ly: [Ảnh] anh1.jpg
+[21:41:56] My: [Ảnh] anh2.jpg
+[21:41:56] My: [Ảnh] anh2.jpg
+[21:41:58] SERVER: 🔔 Ly left the chat
+[21:43:07] SERVER: 🔔 Ly joined the chat
+[21:43:18] SERVER: 🔔 Bo joined the chat
+[21:43:18] SERVER: 🔔 Bo joined the chat
+[21:43:24] Bo: hi
+[21:43:31] Ly: hello
+[21:43:31] Ly: hello
+[21:43:36] Bo: [Ảnh] anh1.jpg
+[21:43:36] Bo: [Ảnh] anh1.jpg
+[21:45:34] Ly: [File] Toán lớp 1.docx
+[21:45:34] Ly: [File] Toán lớp 1.docx
+[21:45:40] Bo: [Emoji]
+[21:45:40] Bo: [Emoji]
+[21:45:44] SERVER: 🔔 Ly left the chat
+[21:48:04] SERVER: 🔔 Ly joined the chat
+[21:48:11] SERVER: 🔔 Bo joined the chat
+[21:48:11] SERVER: 🔔 Bo joined the chat
+[21:48:22] Ly: Hi
+[21:48:28] Bo: Hello
+[21:48:28] Bo: Hello
+[21:48:35] Ly: [Ảnh] anh1.jpg
+[21:48:44] Ly: [Emoji]
+[21:48:44] Ly: [Emoji]
+[21:48:45] Ly: [Emoji]
+[21:48:45] Ly: [Emoji]
+[21:48:48] Ly: [Emoji]
+[21:48:48] Ly: [Emoji]
+[21:48:52] SERVER: 🔔 Ly left the chat
+[21:52:23] SERVER: 🔔 Ly joined the chat
+[21:52:32] SERVER: 🔔 7 joined the chat
+[21:52:32] SERVER: 🔔 7 joined the chat
+[21:52:39] Ly: Hi
+[21:52:39] Ly: Hi
+[21:52:41] 7: Hi
+[21:52:41] 7: Hi
+[21:52:47] Ly: [Ảnh] anh2.jpg
+[21:52:47] Ly: [Ảnh] anh2.jpg
+[21:52:51] 7: [File] anh1.jpeg
+[21:52:51] 7: [File] anh1.jpeg
+[21:53:10] 7: [Ảnh] anh1.jpg
+[21:53:10] 7: [Ảnh] anh1.jpg
+[21:53:17] SERVER: 🔔 Ly left the chat
+[22:01:58] SERVER: 🔔 Bun joined the chat
+[22:05:43] SERVER: 🔔 Ly joined the chat
+[22:05:52] SERVER: 🔔 Bi joined the chat
+[22:05:52] SERVER: 🔔 Bi joined the chat
+[22:05:58] Ly: Hi
+[22:05:58] Ly: Hi
+[22:06:04] Bi: Hello
+[22:06:04] Bi: Hello
+[22:06:09] Ly: [Ảnh] anh1.jpg
+[22:06:09] Ly: [Ảnh] anh1.jpg
+[22:06:15] Bi: [Ảnh] anh2.jpg
+[22:06:15] Bi: [Ảnh] anh2.jpg
+[22:06:20] Ly: [File] Toán lớp 1.docx
+[22:06:20] Ly: [File] Toán lớp 1.docx
+[22:06:30] Bi: [File] lop3.docx
+[22:06:30] Bi: [File] lop3.docx
+[22:06:35] Ly: [Emoji]
+[22:06:35] Ly: [Emoji]
+[22:06:39] Bi: [Emoji]
+[22:06:39] Bi: [Emoji]
+[22:06:41] SERVER: 🔔 Ly left the chat
+[22:06:47] System: ❌ Lỗi: [WinError 10054] An existing connection was forcibly closed by the remote host
+[13:47:01] SERVER: 🔔 Ly joined the chat
+[13:47:31] SERVER: 🔔 Bo joined the chat
+[13:47:31] SERVER: 🔔 Bo joined the chat
+[13:47:43] Bo: Hi
+[13:47:43] Bo: Hi
+[13:47:50] Ly: Xin chao
+[13:47:50] Ly: Xin chao
+[13:48:00] Bo: [Ảnh] anh1.jpg
+[13:48:00] Bo: [Ảnh] anh1.jpg
+[13:48:04] Ly: [Ảnh] anh2.jpg
+[13:48:04] Ly: [Ảnh] anh2.jpg
+[13:48:11] Bo: [File] lop3.docx
+[13:48:11] Bo: [File] lop3.docx
+[13:48:22] Ly: [File] Toán lớp 1.docx
+[13:48:22] Ly: [File] Toán lớp 1.docx
+[13:48:33] Bo: [Emoji]
+[13:48:33] Bo: [Emoji]
+[13:48:37] Ly: [Emoji]
+[13:48:37] Ly: [Emoji]
+[13:53:36] SERVER: 🔔 Ly joined the chat
+[13:53:48] SERVER: 🔔 Bo joined the chat
+[13:53:48] SERVER: 🔔 Bo joined the chat
+[13:53:51] Bo: [Ảnh] anh1.jpg
+[13:53:51] Bo: [Ảnh] anh1.jpg
+[13:54:06] Bo: hi
+[13:54:14] SERVER: 🔔 Ly left the chat
+[14:05:01] SERVER: 🔔 Ly joined the chat
+[14:05:14] SERVER: 🔔 Bo joined the chat
+[14:05:14] SERVER: 🔔 Bo joined the chat
+[14:05:22] Ly: hi
+[14:05:22] Ly: hi
+[14:05:31] Bo: [Ảnh] anh1.jpg
+[14:05:31] Bo: [Ảnh] anh1.jpg
+[14:05:36] Ly: [File] Toán lớp 1.docx
+[14:05:36] Ly: [File] Toán lớp 1.docx
+[14:05:40] Bo: [Emoji]
+[14:05:40] Bo: [Emoji]
+[14:05:45] SERVER: 🔔 Ly left the chat
+[14:24:48] SERVER: 🔔 Ly joined the chat
+[14:24:57] SERVER: 🔔 Bo joined the chat
+[14:24:57] SERVER: 🔔 Bo joined the chat
+[14:25:05] Ly: Hi
+[14:25:11] Bo: [Ảnh] anh1.jpg
+[14:25:11] Bo: [Ảnh] anh1.jpg
+[14:25:16] Ly: [File] lop3.docx
+[14:25:16] Ly: [File] lop3.docx
+[14:25:19] Bo: [Emoji]
+[14:25:19] Bo: [Emoji]
+[14:30:01] SERVER: 🔔 Ly joined the chat
+[14:30:09] SERVER: 🔔 Bo joined the chat
+[14:30:09] SERVER: 🔔 Bo joined the chat
+[14:30:17] Ly: Hi
+[14:30:17] Ly: Hi
+[14:30:26] Bo: [Ảnh] anh1.jpg
+[14:30:26] Bo: [Ảnh] anh1.jpg
+[14:30:31] Ly: [File] Toán lớp 1.docx
+[14:30:31] Ly: [File] Toán lớp 1.docx
+[14:30:34] Bo: [Emoji]
+[14:30:34] Bo: [Emoji]
+[14:30:37] SERVER: 🔔 Ly left the chat
+[10:32:22] SERVER: 🔔 Ly joined the chat
+[12:41:43] SERVER: 🔔 Ly joined the chat
+[12:46:00] SERVER: 🔔 Bo joined the chat
+[12:46:00] SERVER: 🔔 Bo joined the chat
+[12:47:55] Ly: Xin Chào!
+[12:47:55] Ly: Xin Chào!
+[12:48:05] Bo: Hello
+[12:51:06] SERVER: 🔔 Ly left the chat
+[12:51:35] SERVER: 🔔 Ly joined the chat
+[12:51:35] SERVER: 🔔 Ly joined the chat
+[12:51:50] Bo: Hello
+[12:51:50] Bo: Hello
+[12:52:01] Ly: Xin Chào!
+[12:52:01] Ly: Xin Chào!
+[12:52:28] Ly: Bạn thấy ảnh này có đẹp không?
+[12:52:28] Ly: Bạn thấy ảnh này có đẹp không?
+[12:52:33] Ly: [Ảnh] anh1.jpg
+[12:52:33] Ly: [Ảnh] anh1.jpg
+[12:57:28] Bo: Đẹp quá <3
+[12:57:28] Bo: Đẹp quá <3
+[12:58:22] Bo: À, bạn có thể gửi mình file tài liệu hôm qua được không?
+[12:58:22] Bo: À, bạn có thể gửi mình file tài liệu hôm qua được không?
+[12:59:04] Ly: [File] tailieu.docx
+[12:59:04] Ly: [File] tailieu.docx
+[12:59:15] Ly: Đây nhé
+[12:59:15] Ly: Đây nhé
+[13:02:23] Bo: [Emoji]
+[13:02:23] Bo: [Emoji]
+[13:02:55] Ly: [Emoji]
+[13:02:55] Ly: [Emoji]
+[14:11:09] Bo: ...
+[14:11:09] Bo: ...
+[14:43:54] Ly: /private username message
+[14:43:54] Ly: /private username message
