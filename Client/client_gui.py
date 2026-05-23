@@ -51,6 +51,7 @@ except Exception as e:
     messagebox.showerror("Lỗi", f"Tìm thấy Server ({HOST}) nhưng không kết nối TCP được:\n{e}")
     exit()
     
+#=========
 username = ""
 avatar_path = None
 avatar_hex = ""
@@ -115,6 +116,7 @@ def get_avatar(sender, avatar_hex=None):
         photo = ImageTk.PhotoImage(image)
         avatar_images[sender] = photo
         return photo
+
 def display_text(msg, sender=None, avatar_hex=None, save_history=True):
     chat_display.config(state='normal')
     is_self = is_sender_self(sender)
@@ -145,13 +147,10 @@ def display_text(msg, sender=None, avatar_hex=None, save_history=True):
 
         bubble_color = "#0084ff" if is_self else "#ffffff"
         text_color = "white" if is_self else "black"
-
         bubble = tk.Frame(main_frame, bg=bubble_color, padx=12, pady=8)
-        
         name_label = tk.Label(bubble, text="Bạn" if is_self else sender,
                                 font=("Arial", 10, "bold"), bg=bubble_color, fg=text_color)
         name_label.pack(anchor="w")
-
         msg_label = tk.Label(bubble, text=content, font=("Arial", 12),
                                 bg=bubble_color, fg=text_color, justify="left", wraplength=300)
         msg_label.pack(anchor="w")
@@ -188,7 +187,6 @@ def display_text(msg, sender=None, avatar_hex=None, save_history=True):
     chat_display.tag_config("align_left", justify="left")
     chat_display.tag_config("left_time", foreground="gray", font=("Arial", 8), lmargin1=60)
     chat_display.tag_config("right_time", foreground="gray", font=("Arial", 8), justify="right", rmargin=60)
-
     chat_display.config(state='disabled')
     chat_display.see(tk.END)
 
@@ -202,7 +200,7 @@ def open_full_image(image_bytes, filename=None):
         # Đọc dữ liệu ảnh gốc từ bytes
         image = Image.open(io.BytesIO(image_bytes))
         
-        # Giới hạn kích thước hiển thị theo màn hình (tránh ảnh quá to tràn màn hình)
+        # Giới hạn kích thước hiển thị theo màn hình
         screen_w = top.winfo_screenwidth() - 200
         screen_h = top.winfo_screenheight() - 200
         
@@ -263,7 +261,7 @@ def display_image(content_hex, sender, filename=None, avatar_hex=None, is_self=N
         image.thumbnail((200, 200))
         photo = ImageTk.PhotoImage(image)
         image_refs.append(photo)
-        # Cấu trúc Container giống display_text
+        # Cấu trúc Container
         container = tk.Frame(chat_display, bg="#f2f2f2")
         main_frame = tk.Frame(container, bg="#f2f2f2")
         main_frame.pack(fill=tk.BOTH, expand=True)
@@ -284,16 +282,14 @@ def display_image(content_hex, sender, filename=None, avatar_hex=None, is_self=N
             avatar_label.pack(side=tk.LEFT, padx=(10, 5))
             img_bubble.pack(side=tk.LEFT)
             main_frame.pack(anchor="w")
-        # Sự kiện click xem ảnh to
+        # click xem ảnh to
         label.bind("<Button-1>", lambda e: open_full_image(image_bytes, filename))
 
         chat_display.config(state='normal')
         chat_display.insert(tk.END, "\n")
         chat_display.window_create(tk.END, window=container)
-        
         align_tag = "align_right" if is_self else "align_left"
         chat_display.tag_add(align_tag, "end-2c") 
-
         chat_display.insert(tk.END, f"\n{timestamp}", "right_time" if is_self else "left_time")
         chat_display.insert(tk.END, "\n")
         chat_display.config(state='disabled')
@@ -311,19 +307,16 @@ def display_file(sender, filename, avatar_hex=None, filepath=None, is_self=None,
         container = tk.Frame(chat_display, bg="#f2f2f2")
         main_frame = tk.Frame(container, bg="#f2f2f2")
         main_frame.pack(fill=tk.BOTH, expand=True)
-
         avatar_photo = get_avatar(sender, avatar_hex)
         avatar_label = tk.Label(main_frame, image=avatar_photo, bg="#f2f2f2")
-        
         bubble_color = "#0084ff" if is_self else "#ffffff"
         file_frame = tk.Frame(main_frame, bg=bubble_color, padx=10, pady=5)
-        
         label_file = tk.Label(file_frame, text=f"📄 {filename}", bg=bubble_color, 
                                 fg="white" if is_self else "blue", font=("Arial", 11, "underline"), cursor="hand2")
         label_file.pack(side=tk.LEFT)
 
         def trigger_save():
-            # Hàm save_file cũ của bạn
+            # Hàm save_file cũ 
             save_path = filedialog.asksaveasfilename(initialfile=filename)
             if save_path and os.path.exists(filepath):
                 with open(filepath, "rb") as fsrc, open(save_path, "wb") as fdst:
@@ -364,14 +357,11 @@ def display_emoji(content_hex, sender, avatar_hex=None, is_self=None, save_histo
         image.thumbnail((40, 40))
         photo = ImageTk.PhotoImage(image)
         image_refs.append(photo)
-
         container = tk.Frame(chat_display, bg="#f2f2f2")
         main_frame = tk.Frame(container, bg="#f2f2f2")
         main_frame.pack(fill=tk.BOTH, expand=True)
-
         avatar_photo = get_avatar(sender, avatar_hex)
         avatar_label = tk.Label(main_frame, image=avatar_photo, bg="#f2f2f2")
-
         emoji_label = tk.Label(main_frame, image=photo, bg="#f2f2f2")
         emoji_label.image = photo
 
@@ -539,7 +529,6 @@ def open_emoji_window():
     )
     canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
     canvas.configure(yscrollcommand=scrollbar.set)
-
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
