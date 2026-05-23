@@ -18,9 +18,9 @@ server.bind((HOST, PORT))
 server.listen(10)
 
 # ================= DATA =================
-clients = {}          # {socket: username}
-avatars = {}          # {username: avatar_hex}
-login_times = {}      # {username: login_time}
+clients = {}
+avatars = {}
+login_times = {}
 
 # ================= GUI =================
 root = tk.Tk()
