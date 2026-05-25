@@ -413,24 +413,39 @@ def clear_typing_label():
 # ===== SEND FUNCTIONS =====
 def send_message():
     msg = entry_msg.get().strip()
+
     if not msg:
         return
+
     formatted_msg_send = f"[{current_time()}] {username}: {msg}"
+
     data = {
         "type": "text",
         "msg": formatted_msg_send,
         "from": username,
         "avatar": avatar_hex
     }
+
     try:
         send_data(client, data)
+
+        # HIỂN THỊ NGAY TẠI CLIENT
+        display_text(
+            formatted_msg_send,
+            sender=username,
+            avatar_hex=avatar_hex,
+            save_history=False
+        )
+
     except Exception as e:
         messagebox.showerror(
             "Lỗi",
             f"Không gửi được:\n{e}"
         )
         return
+
     entry_msg.delete(0, tk.END)
+
     clear_typing_label()
     
 def send_file(is_image=False):
@@ -490,9 +505,31 @@ def send_file(is_image=False):
             "content": content
         }
 
-    # ===== GỬI 1 LẦN =====
+    # ===== GỬI =====
     try:
         send_data(client, data)
+
+        # ===== HIỂN THỊ LOCAL =====
+        if is_image:
+            display_image(
+                content,
+                username,
+                filename=filename,
+                avatar_hex=avatar_hex,
+                is_self=True,
+                save_history=False
+            )
+
+        else:
+            display_file(
+                username,
+                filename,
+                avatar_hex=avatar_hex,
+                filepath=path,
+                is_self=True,
+                save_history=False
+            )
+
     except Exception as e:
         messagebox.showerror(
             "Lỗi gửi file",
@@ -503,16 +540,29 @@ def send_emoji_image(image_path):
     try:
         with open(image_path, "rb") as f:
             image_data = f.read()
-            hex_data = image_data.hex()
-            message = {
-                "type": "emoji",
-                "from": username,
-                "content": hex_data
-            }
-            # Gửi dữ liệu đi
-            send_data(client, message)
+
+        hex_data = image_data.hex()
+
+        message = {
+            "type": "emoji",
+            "from": username,
+            "content": hex_data,
+            "avatar": avatar_hex
+        }
+
+        send_data(client, message)
+
+        # ===== HIỂN THỊ LOCAL =====
+        display_emoji(
+            hex_data,
+            username,
+            avatar_hex=avatar_hex,
+            is_self=True,
+            save_history=False
+        )
+
     except Exception as e:
-        display_text(f"❌ Không gửi được emoji: {e}", "red")
+        display_text(f"❌ Không gửi được emoji: {e}", "System")
         
 def open_emoji_window():
     emoji_win = tk.Toplevel(window)
@@ -585,49 +635,67 @@ def receive():
                 send_data(client, {"username": username})
 
             elif msg_type == 'text':
-                window.after(0, lambda: display_text(
-                    data['msg'], 
-                    sender=sender, 
+
+            # KHÔNG HIỂN THỊ LẠI TIN NHẮN CỦA CHÍNH MÌNH
+                if not is_self:
+                    window.after(0, lambda: display_text(
+                    data['msg'],
+                    sender=sender,
                     avatar_hex=av_hex
                 ))
+
                 window.after(0, clear_typing_label)
 
             elif msg_type == 'image':
-                window.after(0, lambda: display_image(
-                    data['content'],
-                    sender,
-                    filename=data.get('filename'),
-                    avatar_hex=av_hex,
-                    is_self=is_self
+
+                # KHÔNG HIỂN THỊ LẠI ẢNH CỦA CHÍNH MÌNH
+                if not is_self:
+                    window.after(0, lambda: display_image(
+                        data['content'],
+                        sender,
+                        filename=data.get('filename'),
+                        avatar_hex=av_hex,
+                        is_self=is_self
                 ))
+
                 window.after(0, clear_typing_label)
 
             elif msg_type == 'file':
-                # Xử lý lưu file tạm để có path hiển thị
-                if not os.path.exists("received"):
-                    os.makedirs("received")
-                
-                timestamp = int(time.time())
-                filepath = f"received/{timestamp}_{data['filename']}"
-                with open(filepath, "wb") as f:
-                    f.write(bytes.fromhex(data['content']))
 
-                window.after(0, lambda: display_file(
-                    sender,
-                    data['filename'],
-                    avatar_hex=av_hex,
-                    filepath=filepath,
-                    is_self=is_self
-                ))
+                # KHÔNG HIỂN THỊ LẠI FILE CỦA CHÍNH MÌNH
+                if not is_self:
+
+                # Tạo thư mục received nếu chưa có
+                    if not os.path.exists("received"):
+                        os.makedirs("received")
+
+                    timestamp = int(time.time())
+                    filepath = f"received/{timestamp}_{data['filename']}"
+
+                    with open(filepath, "wb") as f:
+                        f.write(bytes.fromhex(data['content']))
+
+                    window.after(0, lambda: display_file(
+                        sender,
+                        data['filename'],
+                        avatar_hex=av_hex,
+                        filepath=filepath,
+                        is_self=is_self
+                    ))
+
                 window.after(0, clear_typing_label)
 
             elif msg_type == 'emoji':
-                window.after(0, lambda: display_emoji(
-                    data['content'],
-                    sender,
-                    avatar_hex=av_hex,
-                    is_self=is_self
-                ))
+
+                # KHÔNG HIỂN THỊ LẠI EMOJI CỦA CHÍNH MÌNH
+                if not is_self:
+                    window.after(0, lambda: display_emoji(
+                        data['content'],
+                        sender,
+                        avatar_hex=av_hex,
+                        is_self=is_self
+                    ))
+
                 window.after(0, clear_typing_label)
 
             elif msg_type == 'typing':

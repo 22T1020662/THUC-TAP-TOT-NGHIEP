@@ -172,3 +172,59 @@
 [14:11:09] Bo: ...
 [14:43:54] Ly: /private username message
 [14:43:54] Ly: /private username message
+[15:18:22] SERVER: 🔔 Ly joined the chat
+[15:18:49] SERVER: 🔔 Bo joined the chat
+[15:18:49] SERVER: 🔔 Bo joined the chat
+[15:19:05] Ly: Hi
+[15:19:05] Ly: Hi
+[15:19:10] Bo: hello
+[15:19:10] Bo: hello
+[15:19:20] Ly: [Ảnh] anh2.jpg
+[15:19:20] Ly: [Ảnh] anh2.jpg
+[15:19:24] Bo: [Ảnh] anh1.jpg
+[15:19:24] Bo: [Ảnh] anh1.jpg
+[15:19:29] Ly: [File] tailieu.docx
+[15:19:29] Ly: [File] tailieu.docx
+[15:19:45] Bo: [File] lop3.docx
+[15:19:45] Bo: [File] lop3.docx
+[15:19:48] Ly: [Emoji]
+[15:19:48] Ly: [Emoji]
+[15:19:51] Bo: [Emoji]
+[15:19:51] Bo: [Emoji]
+[15:24:08] SERVER: 🔔 Ly joined the chat
+[15:24:18] SERVER: 🔔 Bo joined the chat
+[15:24:18] SERVER: 🔔 Bo joined the chat
+[15:24:29] Ly: xin chào
+[15:24:38] Bo: hi
+[15:24:41] SERVER: 🔔 Ly left the chat
+[15:41:40] SERVER: 🔔 Ly joined the chat
+[15:41:52] SERVER: 🔔 Bun joined the chat
+[15:41:52] SERVER: 🔔 Bun joined the chat
+[15:41:59] Ly: hi
+[15:41:59] Ly: hi
+[15:42:03] Bun: hello
+[15:42:03] Bun: hello
+[15:42:08] Ly: [Ảnh] anh1.jpg
+[15:42:08] Ly: [Ảnh] anh1.jpg
+[15:42:13] Bun: [Ảnh] anh2.jpg
+[15:42:13] Bun: [Ảnh] anh2.jpg
+[15:42:25] Ly: [File] Ngô Thị cẩm Ly.pdf
+[15:42:25] Ly: [File] Ngô Thị cẩm Ly.pdf
+[15:42:36] Bun: [File] tailieu.docx
+[15:42:36] Bun: [File] tailieu.docx
+[15:42:39] Ly: [Emoji]
+[15:42:39] Ly: [Emoji]
+[15:42:44] Bun: [Emoji]
+[15:42:44] Bun: [Emoji]
+[15:47:21] SERVER: 🔔 ly joined the chat
+[15:47:28] SERVER: 🔔 Bun joined the chat
+[15:47:28] SERVER: 🔔 Bun joined the chat
+[15:47:37] ly: hi
+[15:47:39] Bun: Hi
+[15:47:44] ly: [Ảnh] anh2.jpg
+[15:47:47] Bun: [Ảnh] anh1.jpg
+[15:47:53] ly: [File] tailieu.docx
+[15:47:57] Bun: [File] Toán lớp 3.docx
+[15:47:59] ly: [Emoji]
+[15:48:02] Bun: [Emoji]
+[15:48:17] SERVER: 🔔 ly left the chat
